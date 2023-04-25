@@ -1,0 +1,16 @@
+{
+  "domain": "noaa_uvindex",
+  "name": "NOAA UV Index",
+  "codeowners": [
+    "@davidn"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/noaa_uvindex",
+  "homekit": {},
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "version": "1.0.0"
+}
