@@ -1,0 +1,22 @@
+{
+  "title": "EPA UV Index",
+  "config": {
+    "step": {
+      "user": {
+	"description": "Provide the location to retrieve UV Index for.",
+        "data": {
+          "city": "City",
+          "state": "State"
+        }
+      }
+    },
+    "error": {
+      "invalid_city_state": "Invalid City/State combination",
+      "api_error": "Unrecognized error from EPA Envirofacts API",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  }
+}

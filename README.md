@@ -1,4 +1,4 @@
-# Home Assistant NOAA UV Index Integration
+# Home Assistant EPA UV Index Integration
 
 ![Dashboard card showing UV Index](screenshot.png)
 
@@ -10,15 +10,15 @@
 
 1. Navigate to the HACS add-on
 
-2. Add https://github.com/davidn/noaa_uvindex as a custom repository.
+2. Add https://github.com/davidn/epa_uvindex as a custom repository.
 
-3. Go to the NOAA UV Index integration and add it.
+3. Go to the EPA UV Index integration and add it.
 
 4. Restart Home Assistant
 
-5. Go to Settings > Devices & Services, and on the Integration tab click "Add Integration". Select "NOAA UV Index"
+5. Go to Settings > Devices & Services, and on the Integration tab click "Add Integration". Select "EPA UV Index"
 
-6. Enter the nearest city listed on [the NOAA UV Index bulletin](https://www.cpc.ncep.noaa.gov/products/stratosphere/uv_index/bulletin.txt).
+6. Enter the nearest city and state.
 
 You will now have a sensor that provides the UV Index in that city.
 
@@ -29,9 +29,9 @@ You will now have a sensor that provides the UV Index in that city.
 
 2. Restart Home Assistant.
 
-3. Go to Settings > Devices & Services, and on the Integration tab click "Add Integration". Select "NOAA UV Index"
+3. Go to Settings > Devices & Services, and on the Integration tab click "Add Integration". Select "EPA UV Index"
 
-4. Enter the nearest city listed on [the NOAA UV Index bulletin](https://www.cpc.ncep.noaa.gov/products/stratosphere/uv_index/bulletin.txt).
+4. Enter the nearest city and state.
 
 You will now have a sensor that provides the UV Index in that city.
 

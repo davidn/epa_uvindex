@@ -1,13 +1,13 @@
 {
-  "domain": "noaa_uvindex",
-  "name": "NOAA UV Index",
+  "domain": "epa_uvindex",
+  "name": "EPA UV Index",
   "codeowners": [
     "@davidn"
   ],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/davidn/noaa_uvindex",
-  "issue_tracker": "https://github.com/davidn/noaa_uvindex/issues",
+  "documentation": "https://github.com/davidn/epa_uvindex",
+  "issue_tracker": "https://github.com/davidn/epa_uvindex/issues",
   "homekit": {},
   "iot_class": "cloud_polling",
   "requirements": [],

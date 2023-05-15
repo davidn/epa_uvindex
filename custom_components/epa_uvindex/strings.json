@@ -1,9 +1,9 @@
 {
-  "title": "NOAA UV Index",
+  "title": "EPA UV Index",
   "config": {
     "step": {
       "user": {
-	"description": "Provide the location to retrieve UV Index for. This Must be a location published in the <a href=\"https://www.cpc.ncep.noaa.gov/products/stratosphere/uv_index/bulletin.txt\">NOAA UV Index Bulletin</a>.",
+	"description": "Provide the location to retrieve UV Index for.",
         "data": {
           "city": "City",
           "state": "State"
@@ -12,6 +12,7 @@
     },
     "error": {
       "invalid_city_state": "Invalid City/State combination",
+      "api_error": "Unrecognized error from EPA Envirofacts API",
       "unknown": "[%key:common::config_flow::error::unknown%]"
     },
     "abort": {

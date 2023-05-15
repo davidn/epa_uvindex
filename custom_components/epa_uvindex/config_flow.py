@@ -11,7 +11,7 @@ from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResult
 
 from .const import DOMAIN
-from .noaa_uvindex import NoaaUvindex, CityStateNotFound
+from .epa_uvindex import EpaUvindex, EnvirofactsLocationError, EnvirofactsApiError
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -25,14 +25,14 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
 
 async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str, Any]:
     """Validate the user input allows us to connect."""
-    noaa_uvindex = NoaaUvindex(hass, data["city"], data["state"])
-    uvindex = await noaa_uvindex.async_get_uvindex()
+    epa_uvindex = EpaUvindex(hass, data["city"], data["state"])
+    uvindex = await epa_uvindex.async_get_daily_uvindex()
 
     return {"title": f"UV Index for {data['city']}, {data['state']}"}
 
 
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for noaa_uvindex."""
+    """Handle a config flow for epa_uvindex."""
 
     VERSION = 1
 
@@ -44,9 +44,12 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             try:
                 info = await validate_input(self.hass, user_input)
-            except CityStateNotFound:
-                _LOGGER.exception("City/State combo not found in NOAA Bulletin")
+            except EnvirofactsLocationError as e:
+                _LOGGER.exception(e)
                 errors["base"] = "invalid_city_state"
+            except EnvirofactsApiError:
+                _LOGGER.exception(e)
+                errors["base"] = "api_error"
             except Exception:  # pylint: disable=broad-except
                 _LOGGER.exception("Unexpected exception")
                 errors["base"] = "unknown"

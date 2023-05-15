@@ -17,25 +17,26 @@ def setup_platform(
     discovery_info: DiscoveryInfoType | None = None
 ) -> None:
     """Set up the sensor platform."""
-    add_entities([NoaaUVSensor()])
+    add_entities([EpaUVSensor()])
 
 async def async_setup_entry(hass, config_entry, async_add_devices):
     """Set up the sensor from a config entry."""
-    async_add_devices([NoaaUVSensor(hass.data[DOMAIN][config_entry.entry_id])])
+    async_add_devices([EpaUVSensor(hass.data[DOMAIN][config_entry.entry_id])])
 
 
-class NoaaUVSensor(SensorEntity):
+class EpaUVSensor(SensorEntity):
     """Representation of a Sensor."""
 
     _attr_name = "UV Index"
     _attr_native_unit_of_measurement = UV_INDEX
     _attr_state_class = SensorStateClass.MEASUREMENT
 
-    def __init__(self, noaa_uvindex):
-        self.noaa_uvindex = noaa_uvindex
+    def __init__(self, epa_uvindex):
+        self.epa_uvindex = epa_uvindex
 
     def update(self) -> None:
         """Fetch new state data for the sensor.
         This is the only method that should fetch new data for Home Assistant.
         """
-        self._attr_native_value = self.noaa_uvindex.get_uvindex()
+        self._attr_native_value = self.epa_uvindex.get_daily_uvindex()
+        self._attr_extra_state_attributes = {"forecast":self.epa_uvindex.get_hourly_uvindex()}
