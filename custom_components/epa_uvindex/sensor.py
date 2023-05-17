@@ -33,6 +33,7 @@ class EpaUVSensor(SensorEntity):
 
     def __init__(self, epa_uvindex):
         self.epa_uvindex = epa_uvindex
+        self._attr_unique_id = "{city}_{state}_uvindex".format(city=epa_uvindex.city, state=epa_uvindex.state)
 
     def update(self) -> None:
         """Fetch new state data for the sensor.
