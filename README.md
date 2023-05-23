@@ -2,6 +2,8 @@
 
 ![Dashboard card showing UV Index](screenshot.png)
 
+![Dashboard card showing UV Index Hourly](hourly_screenshot.png)
+
 ## Install instructions
 
 ### Recommended: Install with HACS
