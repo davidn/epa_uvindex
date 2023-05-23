@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74742565"
+     inkscape:cx="267.58515"
+     inkscape:cy="346.52276"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="-389.10808"
+       y="-44.771924"
+       width="470.44996"
+       height="346.66836"
+       id="rect6123" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#0a3f7f;fill-opacity:1;stroke-width:0.430893;stroke-linecap:round;stroke-opacity:0.999777;paint-order:markers stroke fill"
+       id="rect1654"
+       width="135.46666"
+       height="135.46666"
+       x="3.5603841e-06"
+       y="3.5603841e-06"
+       ry="18.396708"
+       rx="18.396708" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50.8px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:128.494;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="82.453712"
+       y="55.395756"
+       id="text5341"
+       transform="translate(-79.785049,-2.2722175)" />
+    <text
+       xml:space="preserve"
+       id="text6121"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:0.8;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-padding:0.523439;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="64.435883"
+       y="79.591095"><tspan
+         id="tspan6125"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"><tspan
+   id="tspan6853"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.9583px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;text-anchor:middle;stroke-width:0.264583">UV</tspan>
+<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:39.9521px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;text-anchor:middle;stroke-width:0.264583"
+   id="tspan6862"
+   dx="3.8539929">INDEX</tspan></tspan></text>
+  </g>
+</svg>
