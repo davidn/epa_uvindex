@@ -33,7 +33,7 @@ class EpaUvindex:
         for e in hours:
             hourly_forecast.append({
                 "uv_index": e['UV_VALUE'],
-                "datetime": datetime.strptime(e['DATE_TIME'], "%B/%d/%Y %I %p")
+                "datetime": datetime.strptime(e['DATE_TIME'], "%b/%d/%Y %I %p")
             })
         return hourly_forecast
 
