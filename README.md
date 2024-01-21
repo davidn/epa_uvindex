@@ -39,8 +39,8 @@ You will now have a sensor that provides the UV Index in that city.
 
 ## Example dashboard card
 
-The screenshot above is from the following dashboard card:
-```
+The gauge screenshot above is from the following dashboard card:
+```yaml
 type: gauge
     entity: sensor.uv_index
     segments:
@@ -57,4 +57,21 @@ type: gauge
     min: 1
     max: 12
     needle: true
+```
+
+The hourly card is can be found at https://github.com/davidn/uvindex-hourly.
+
+# Usage
+
+This integration provides a single sensor called `sensor.uv_index`. The value of the sensor is the max UV index for the current day.  The sensor also has a `forecast` attribute that provides hourly UV index predictions. This attribute is an array of dicts, each dict having a `datetime` and a `uv_index` entry with the time and UV index for that prediction. This comes directly from the EPA source, which currently provides a prediction for a sensible range of hours, on the hour, but could potentially change.
+
+If you want a separate sensor with the current UV index, create a template sensor using the following template:
+
+```python
+{% for forecast in state_attr("sensor.uv_index", "forecast") %}
+  {% if forecast.datetime | as_local >= now() %}
+    {{ forecast.uv_index }}
+    {% break %}
+  {% endif %}
+{% endfor %}
 ```
