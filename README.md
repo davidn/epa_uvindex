@@ -1,5 +1,8 @@
 # Home Assistant EPA UV Index Integration
 
+> [!NOTE]
+This integration only provides data for locations in the United States.
+
 ![Dashboard card showing UV Index](screenshot.png)
 
 ![Dashboard card showing UV Index Hourly](hourly_screenshot.png)
