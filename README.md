@@ -13,13 +13,13 @@ This integration only provides data for locations in the United States.
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration)
 
-1. Navigate to the HACS add-on
+1. Navigate to the HACS add-on. Go to "Integrations", if HACS has separate pages for Integrations and Frontend.
 
-2. Add https://github.com/davidn/epa_uvindex as a custom repository.
+2. Via the "..." menu at the top right, select "Custom repositories" and add https://github.com/davidn/epa_uvindex as type "Integration".
 
-3. Go to the EPA UV Index integration and add it.
+3. If there is a "Explore & download respositories" button, click on and find the "EPA UV Index" integration. If you directly see a list of integrations, find the "EPA UV Index" integration (you may need to clear filters to see integrations that haven't been downloaded). Click on the integration and then click "Download".
 
-4. Restart Home Assistant
+4. Restart Home Assitant.
 
 5. Go to Settings > Devices & Services, and on the Integration tab click "Add Integration". Select "EPA UV Index"
 
