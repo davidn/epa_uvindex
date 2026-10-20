@@ -13,5 +13,6 @@
   "requirements": [],
   "ssdp": [],
   "version": "1.0.0",
-  "zeroconf": []
+  "zeroconf": [],
+  "categories": ["weather_alerts"]
 }
